@@ -331,6 +331,7 @@ audio,
 video {
   display: block;
   max-width: 100%;
+}
 
 #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
   font-size: 1em;  /* 16px, (16px/16px=1em) */
