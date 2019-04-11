@@ -539,12 +539,18 @@ input[type="submit"]:hover {
   background-color: darkorange;
   transition-duration: 1.5s;
   cursor: pointer;
+  width:98%;
+  margin-left:1%;
+  margin-right:1%;
 }
 
 input[type="reset"]:hover {
   background-color: darkorange;
   transition-duration: 1.5s;
   cursor: pointer;
+  width:38%;
+  margin-left:31%;
+  margin-right:31%;
 }
 
 /** end of reg form**/
@@ -852,6 +858,22 @@ video {
     margin-right: 35%;
     margin-left: 35%;
   }
+  input[type="submit"]:hover {
+  background-color: darkorange;
+  transition-duration: 1.5s;
+  cursor: pointer;
+  width:68%;
+  margin-left:16%;
+  margin-right:16%;
+}
+  input[type="reset"]:hover {
+  background-color: darkorange;
+  transition-duration: 1.5s;
+  cursor: pointer;
+  width:28%;
+  margin-left:36%;
+  margin-right:36%;
+}
 
 }
 
@@ -879,6 +901,22 @@ video {
     margin-right: 40%;
     margin-left: 40%;
   }
+  input[type="submit"]:hover {
+  background-color: darkorange;
+  transition-duration: 1.5s;
+  cursor: pointer;
+  width:58%;
+  margin-left:21%;
+  margin-right:21%;
+}
+  input[type="reset"]:hover {
+  background-color: darkorange;
+  transition-duration: 1.5s;
+  cursor: pointer;
+  width:18%;
+  margin-left:41%;
+  margin-right:41%;
+}
   .info {
     padding: 20px;
   }
