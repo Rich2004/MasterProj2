@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Team Champions-League Project 2 for ITMD-362</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" media="screen" href="css/resets.css" />
+  <link rel="stylesheet" media="screen" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway" rel="stylesheet">
+  <script src="js/isud.js" async></script>
+</head>
+
+<body>
+  <header>
+  
+  <div class="topnav" id="myTopnav">
+    <a><img src="media/globe_small.png" alt="worldialogue"></a>
+    <a href="index.html" class="active">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">About
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="about.html">About ISUD</a>
+        <a href="constitution.html">Constitution</a>
+        <a href="publications.html">Publications</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Events
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="register.html">Upcoming Congress</a>
+        <a href="cong2018.html">2018 Congress</a>
+        <a href="events.html">Past Events</a>
+        <a href="https://www.youtube.com/user/hermesnow/playlists">Videos</a>
+      </div>
+    </div>
+  </div>
+</header>
+  <main>
+    <form name="myForm" action="get" onsubmit="return validateForm()" method="post" autocomplete="on">
+      <div class="reg-header">
+       
+       
+         <h1 class="light">EVENT  REGISTRATION</h1>
+        <h2 class="light">Graz, Austria</h2>
+        <h2 class="light">July / 10-15 / 2020</h2>
+      </div>
+      <div class="info">
+        <div class="info-header">
+          <h2 class="light">INFORMATION</h2>
+        </div>
+        <label id="title">Title:</label>
+        <select name="title">
+          <option value="Mr">Mr.</option>
+          <option value="Mrs">Mrs.</option>
+          <option value="Miss">Miss</option>
+          <option value="Dr">Dr.</option>
+        </select>
+        <label for="fname">First Name<sup>*</sup></label><input type="text" name="fname" id="fname" placeholder="first name">
+        <label for="lname">Last Name<sup>*</sup></label><input type="text" name="lname" id="lname" placeholder="last name">
+        <label for="email">Email<sup>*</sup></label><input type="email" name="email" id="email" placeholder="email">
+        <label id="tel">Phone</label><input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+      </div>
+      <div class="days">
+        <div class="days-inner">
+          <h3 class="light">CHOOSE YOUR DAYS</h3>
+          <table>
+            
+            <tr>
+              <td>Thursday:</td>
+              <td>$80.00</td>
+              <td><input type="radio" id="thu" name="thu" value="Thursday"></td>
+            </tr>
+            <tr>
+              <td>Friday:</td>
+              <td>$100.00</td>
+              <td><input type="radio" id="fri" name="fri" value="both days"></td>
+            </tr>
+            <tr>
+              <td>Saturday:</td>
+              <td>$100.00</td>
+              <td><input type="radio" id="sat" name="sat" value="Saturday"></td>
+            </tr>
+            <tr>
+              <td>Sunday:</td>
+              <td>$100.00</td>
+              <td><input type="radio" id="sun" name="sun" value="Sunday"></td>
+            </tr>
+            <tr>
+              <td>Monday:</td>
+              <td>$80.00</td>
+              <td><input type="radio" id="mon" name="mon" value="Monday"></td>
+            </tr>
+            <tr>
+              <td>Tuesday:</td>
+              <td>$80.00</td>
+              <td><input type="radio" id="tue" name="tue" value="Tuesday"></td>
+            </tr>
+            
+          </table>
+        </div>
+        <h4 class="light">PAYMENT METHODS</h4>
+        <img src="media/cards.png" alt="cards" class="cards">
+      </div>
+      <div class="buttons">
+        <input type="submit" id="submit" value="REGISTER NOW">
+        <input type="reset" id="reset" value="RESET">
+         <img src="media/logo.png" alt="logo" class="logo">
+      </div>
+      
+    </form>
+    </main>
+    <footer class="footer">
+     
+      <p>Contact information: <a href="mailto:someone@example.com">isud2018@gmail.com</a></p>
+       <p>ISUD&copy;2019</p>
+    </footer>
+</body>
+
+</html>
