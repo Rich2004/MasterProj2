@@ -537,7 +537,7 @@ input[type="reset"] {
 
 input[type="submit"]:hover {
   background-color: darkorange;
-  transition-duration: 1.5s;
+  transition-duration: 1.0s;
   cursor: pointer;
   width:98%;
   margin-left:1%;
@@ -546,7 +546,7 @@ input[type="submit"]:hover {
 
 input[type="reset"]:hover {
   background-color: darkorange;
-  transition-duration: 1.5s;
+  transition-duration: 1.0s;
   cursor: pointer;
   width:38%;
   margin-left:31%;
