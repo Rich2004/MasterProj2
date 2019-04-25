@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Team Champions-League Project 2 for ITMD-362/Registration</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Libre+Baskerville" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/myScript.js" async></script>
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <img src="images/isud_header.png" class="logo">
+      <label for="drop" class="toggle">MENU</label>
+      <input type="checkbox" id="drop" />
+      <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-1" class="toggle">ABOUT +</label>
+          <a href="#">ABOUT</a>
+          <input type="checkbox" id="drop-1" />
+          <ul>
+            <li><a href="about.html">ABOUT ISUD</a></li>
+            <li><a href="constitution.html">CONSTITUTION</a></li>
+            <li><a href="publications.html">PUBLICATIONS</a></li>
+          </ul>
+        </li>
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-2" class="toggle">EVENTS +</label>
+          <a href="#">EVENTS</a>
+          <input type="checkbox" id="drop-2" />
+          <ul>
+            <li><a href="#">UPCOMING CONGRESS</a></li>
+            <li><a href="2018.html">2018 CONGRESS</a></li>
+            <li><a href="past.html">PAST EVENTS</a> </li>
+          </ul>
+          <li><a href="https://www.youtube.com/user/hermesnow/playlists">VIDEO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="reg-outer">
+      <div class="reg-inner">
+        <form name="myForm" action="get" onsubmit="return validateForm()" method="post" autocomplete="on">
+          <div class="reg-header">
+            <h1>WORLD CONGRESS</h1>
+            <h2>REGISTRATION</h2>
+
+            <h2>Graz, Austria</h2>
+            <h2>July / 10-15 / 2020</h2>
+          </div>
+          <div class="info">
+            <div class="info-header">
+              <h2>INFORMATION</h2>
+            </div>
+            <label for="fname">First Name:</label><input type="text" name="fname" id="fname" placeholder="first name">
+            <label for="lname">Last Name:</label><input type="text" name="lname" id="lname" placeholder="last name">
+            <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="email">
+            <label id="tel">Phone:</label><input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+          </div>
+          <div class="days">
+            <div class="days-inner">
+              <h3>CHOOSE YOUR DAYS</h3>
+              <table>
+
+                <tr>
+                  <td>Thursday:</td>
+                  <td>$80.00</td>
+                  <td><input type="radio" id="thu" name="thu" value="Thursday"></td>
+                </tr>
+                <tr>
+                  <td>Friday:</td>
+                  <td>$100.00</td>
+                  <td><input type="radio" id="fri" name="fri" value="both days"></td>
+                </tr>
+                <tr>
+                  <td>Saturday:</td>
+                  <td>$100.00</td>
+                  <td><input type="radio" id="sat" name="sat" value="Saturday"></td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>$100.00</td>
+                  <td><input type="radio" id="sun" name="sun" value="Sunday"></td>
+                </tr>
+                <tr>
+                  <td>Monday:</td>
+                  <td>$80.00</td>
+                  <td><input type="radio" id="mon" name="mon" value="Monday"></td>
+                </tr>
+                <tr>
+                  <td>Tuesday:</td>
+                  <td>$80.00</td>
+                  <td><input type="radio" id="tue" name="tue" value="Tuesday"></td>
+                </tr>
+
+              </table>
+            </div>
+            <h3>PAYMENT METHODS</h3>
+            <img src="images/cards.png" alt="cards" class="cards">
+          </div>
+          <div class="buttons">
+            <input type="submit" id="submit" value="REGISTER NOW">
+            <input type="reset" id="reset" value="RESET">
+            <img src="images/globe_hands.png" alt="globe_hands" class="hands">
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container-1">
+        <div class="box-1">
+          <a href="#" class="email"><i class="fa fa-envelope"> isudcongress2020@gmail.com</i></a>
+          <a href="#" class="email"><i class="fa fa-envelope"> isud@gmail.com</i></a>
+        </div>
+        <div class="box-1">
+          <p>Designed by Team Champions-League</p>
+          <p>Made in Chicago</p>
+        </div>
+        <div class="box-1">
+          <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copywrite">
+        <p>ISUD &copy; 2019</p>
+
+      </div>
+    </footer>
+
+  </main>
+</body>
+
+</html>
