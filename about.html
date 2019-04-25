@@ -1,49 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" class="about">  
-  <head>
-    <meta charset="utf-8">
-    <title>ITMD-362 Project2</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" media="screen" href="css/resets.css" />
-    <link rel="stylesheet" media="screen" href="css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script async src="js/isud.js"></script>
-  </head>
-<body id="body-about">
-    <div class="header">
-      <p>International Society for Universal Dialogue</p>
-    </div>
-    <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active">Home</a>
-      <div class="dropdown">
-        <button class="dropbtn">About
-            <i class="fa fa-caret-down"></i>
-        </button>
-      <div class="dropdown-content">            <a href="about.html">About ISUD</a>
-        <a href="constitution.html">Constitution</a>
-        <a href="publications.html">Publications</a>
-      </div>
-    </div>
-      <div class="dropdown">
-        <button class="dropbtn">Events
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="register.html">Upcoming Congress</a>
-          <a href="cong2018.html">2018 Congress</a>
-          <a href="events.html">Past Events</a>
-          <a href="https://www.youtube.com/user/hermesnow/playlists">Videos</a>
-        </div>
-      </div>
-    </div>
+
+<html lang="en">
+
+<head>
+  <title>Team Champions-League Project 2 for ITMD-362/About</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Libre+Baskerville" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/myScript.js" async></script>
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <img src="images/isud_header.png" class="logo">
+      <label for="drop" class="toggle">MENU</label>
+      <input type="checkbox" id="drop" />
+      <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-1" class="toggle">ABOUT +</label>
+          <a href="#">ABOUT</a>
+          <input type="checkbox" id="drop-1" />
+          <ul>
+            <li><a href="#">ABOUT ISUD</a></li>
+            <li><a href="constitution.html">CONSTITUTION</a></li>
+            <li><a href="publications.html">PUBLICATIONS</a></li>
+          </ul>
+        </li>
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-2" class="toggle">EVENTS +</label>
+          <a href="#">EVENTS</a>
+          <input type="checkbox" id="drop-2" />
+          <ul>
+            <li><a href="registration.html">UPCOMING CONGRESS</a></li>
+            <li><a href="2018.html">2018 CONGRESS</a></li>
+            <li><a href="past.html">PAST EVENTS</a> </li>
+          </ul>
+          <li><a href="https://www.youtube.com/user/hermesnow/playlists">VIDEO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
   
-  <main id="main-about">
+    <div class="col-outer">
+     
+      <div class="col-inner">
+         <main id="main-about">
     <h1>About Us</h1>
     <section id="about-us">
       <h2>The International Society for Universal Dialogue (ISUD)</h2>
       <p>ISUD is a society of scholars, mostly philosophers, from many parts of the world, devoted to promoting international dialogue and the discussion of fundamental questions of universal concern, which affect all humanity, such as world peace, human rights, dialogical interrelations of diverse cultures, and preservation of the world ecology.</p>
-      <img id="umind" src="media/mind.jpg" alt="Universal Mind image">
+      <img id="umind" src="images/mind.jpg" alt="Universal Mind image">
       <div id="qlist">
         <p>What role does philosophical thinking have to play in moving toward a more rational and more humane future?</p>
         <p>What are ethical principles of dialogue?</p>
@@ -62,19 +78,55 @@
       <h2>History of the ISUD</h2>
       <p>ISUD was founded in Warsaw, Poland in 1989. ISUD is a philosophical society dedicated to promoting international and intercultural dialogue among an ever-wider segment of humanity.</p>
       <p>The main purpose of the society is to pursue, by means of scholarly work, the gradual realization of a decent, peaceful, and just world order. Towards this goal, ISUD produces biannual international conferences to facilitate an ethos of universal dialogue.</p>
-      <img id="tman" src="media/tman.jpg" alt="Thinking Man image">
+      <img id="tman" src="images/tman.jpg" alt="Thinking Man image">
       <p>ISUD is committed to promoting philosophical discourse intended to encourage the emergence of a more decent and humane world order by promoting dialogue to actualize the highest and richest human values in all dimensions of life.</p>
       <p>ISUD is a member of the International Federation of Philosophical Societies (FISP), is an international association of philosophers and scholars from a wide range of other disciplines (such as history, archaeology, pedagogy, anthropology, etc) devoted to promoting the discussion of such fundamental issues as world peace, social justice, human rights, and dialogical interrelations of diverse cultures.</p>
-      <img id="athens" src="media/athens.jpg" alt="Athens picture">
+      <img id="athens" src="images/athens.jpg" alt="Athens picture">
       <p>Since 2004, the ISUD has been one of 103 full members of the FISP
         that is linked with the International Council for Philosophy and Humanistic Studies (ICPHS) and with UNESCO. The goals of the ISUD are very much in line with the main objectives of FISP, ICPHS, and UNESCO: namely, to promote philosophical education on a global scale, and to generate a greater awareness of the social and global problems that confront us in order to break through the impasse in which humanity finds itself in the early 21st century.</p>
       </section>
-    </main>
-    <section> 
-    <div class="footer">
-       <p>Contact information: <a href="mailto:someone@example.com">isud2018@gmail.com</a></p>
-       <p>ISUD&copy;2019</p>
+        </main>
+
+        
+
+  
+      
+<img src="images/globe_hands.png" alt="globe" class="hands-index">
+      </div>
+       
     </div>
-      </section>      
-  </body>
-      </html>
+   
+     
+  
+    </div>
+    
+    <footer>
+      <div class="container-1">
+        <div class="box-1">
+          <a href="#" class="email"><i class="fa fa-envelope"> isudcongress2020@gmail.com</i></a>
+          <a href="#" class="email"><i class="fa fa-envelope"> isud@gmail.com</i></a>
+        </div>
+        <div class="box-1">
+          <p>Designed by Team Champions-League</p>
+          <p>Made in Chicago</p>
+        </div>
+        <div class="box-1">
+          <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copywrite">
+        <p>ISUD &copy; 2019</p>
+
+      </div>
+    </footer>
+
+  
+</body>
+
+</html>

@@ -1,648 +1,153 @@
-/* Team Champions-League, style.css */
+/* CSS Document */
 
-/*
-We used Modular Scale Minor 3rd, 120% in the Math calculations below.
-We assumed browser defult font size of 16px.
-*/
+html {}
 
-/* ===== BASE STYLES ==================== */
-
-/* Daniel*/
-
-/*TopNan*/
-
-/* Add a black background color to the top navigation */
-
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-
-
-
-}
-
-.header {
-  float: left;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-/* Style the links inside the navigation bar */
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Add an active class to highlight the current page */
-
-.active {
-  background-color;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-
-.topnav .icon {
-  display: none;
-}
-
-/* Dropdown container - needed to position the dropdown content */
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Style the dropdown button to fit inside the topnav */
-
-.dropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Style the dropdown content (hidden by default) */
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Style the links inside the dropdown */
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-
-.topnav a:hover,
-.dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
-
-/* Add a grey background to dropdown links on hover */
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #555;
-  color: white;
-  text-align: center;
-}
-
-/*TopNan and footer ends here*/
-
-/*Strip the ul of padding and list styling*/
-
-ul {
-  list-style-type: none;
+body {
+  background: #262626;
+  color: #000;
   margin: 0;
   padding: 0;
-  position: absolute;
+  word-wrap: break-word;
 }
 
-
-/*Style for dropdown links*/
-
-li:hover ul a {
-  background: #f3f3f3;
-  color: #2f3036;
-  height: 40px;
-  line-height: 40px;
-}
-
-/*Hover state for dropdown links*/
-
-li:hover ul a:hover {
-  background: #19c589;
-  color: #fff;
-}
-
-/*Hide dropdown links until they are needed*/
-
-li ul {
-  display: none;
-}
-
-/*Make dropdown links vertical*/
-
-li ul li {
-  display: block;
-  float: none;
-}
-
-/*Prevent text wrapping*/
-
-li ul li a {
-  width: auto;
-  min-width: 100px;
-  padding: 0 20px;
-}
-
-/*Display the dropdown on hover*/
-
-ul li a:hover + .hidden,
-.hidden:hover {
-  display: block;
-}
-
-/*Style 'show menu' label button and hide it by default*/
-
-.show-menu {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  color: #fff;
-  background: #19c589;
-  text-align: center;
-  padding: 10px 0;
-  display: none;
-}
-
-/*Hide checkbox*/
-
-input[type=checkbox] {
-  display: none;
-}
-
-/*Show menu when invisible checkbox is checked*/
-
-input[type=checkbox]:checked ~ #menu {
-  display: block;
-}
-
-/** mobile registration**/
-
-/** mobile registration**/
-
-}
-
-
-
-/**richard's form**/
-
-input[type=tel] {
+header {
+  background-color:#bc986a;
+  position: fixed;
+  top: 0;
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 
-td {
-  padding-right: 20px;
-}
-
-}
-
-/*Create a horizontal list with spacing*/
-
-li {
-  display: inline-block;
-  float: left;
-  margin-right: 1px;
-}
-
-/*Style for menu links*/
-
-li a {
-  display: block;
-  min-width: 140px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
-  background: #2f3036;
-  text-decoration: none;
-}
-
-/*Hover state for top level links*/
-
-li:hover a {
-  background: #19c589;
-}
-
-/*Style for dropdown links*/
-
-li:hover ul a {
-  background: #f3f3f3;
-  color: #2f3036;
-  height: 40px;
-  line-height: 40px;
-}
-
-/*Hover state for dropdown links*/
-
-li:hover ul a:hover {
-  background: #19c589;
-  color: #fff;
-}
-
-/*Hide dropdown links until they are needed*/
-
-li ul {
-  display: none;
-}
-
-/*Make dropdown links vertical*/
-
-li ul li {
-  display: block;
-  float: none;
-}
-
-/* Nilufer Anlar
-
-   /*========Styles my pages are listed below =================== */
-
-/* set up font-family and other common styles */
-
-#body-about,
-#body-const,
-#body-pubs,
-#body-events,
-#body-cong18 {
-  font-family: "Times New Roman", Georgia, Serif;
-  background-color: whitesmoke;
-
-}
-
-form {
-  width: 95%;
+.about {
+  width: 90%;
   margin: auto;
-  padding: 10px 10px 10px 10px;
-  background-color: cadetblue;
-  color: #1d2731;
 
+  padding-top: 5px;
+}
 
+.globe {
+  width: 16%;
+  margin: 0 42% 0 42%;
+}
+.intro {
+  border-bottom: 2px solid brown;
+  width: 90%;
+  margin: auto;
+  padding-top: 5px;
+}
+.intro h3{
+  font-size:1.15em;
+  line-height:1.2em;
+  padding: 0 15px;
+  font-family:"Didact+Gothic", sans-serif;
+  
+}
+.reg-btn {
+  width: 20%;
+  margin: 5px 40% 10px 40%;
+  background-color: brown;
+  border: none;
+  color: #FBEEC1;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 1.0em;
+  line-height: 1.0em;
+  cursor: pointer;
+}
+
+.reg-btn:hover {
+  background-color: #262626;
+  transition-duration: 0.5s;
 }
 
 
-#main {
-  font-size: 1em;
-  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;
-  /* 120% at 19.2px, (19.2/16px=1.2) */
-  padding: 0.5em 0.5em;
-  /* 8px, (8px/16px=0.5em) */
+.graz {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 50px;
+  margin-top: 10px;
+
+}
+
+/******************Start Fixing here*********************/
+/* constitution page ====== */
+.wrapper{
+  padding-top:40px;
+}
+
+.col-inner{
+  padding-top:1px;
+}
+#main-const{
+  width:95%;
+  margin:auto;
+}
+/* publications page ====== */
+
+.pub h2 {
+  font-style: oblique;
+  color: green;
+  margin-bottom: 1px;
+}
+
+#pub1,
+#pub2,
+#pub3,
+#pub4,
+#pub5 {
+  background-color: mintcream;
+}
+
+#dujournal {
+  background-color: ghostwhite;
+}
+
+#dujournal h2 {
+  font-size: 1.5em;
+  line-height: 1.8em;
+  /* at 120%, 28.8px, 28.8/16=1.8em */
+  color: red;
+}
+
+#dujournal a {
+  font-style: arial;
+}
+
+/* events page ====== */
+
+#events {
+  margin-right: 5px;
 }
 
 
-/* for Responsive Media */
-
-img,
-audio,
-video {
+#e-list {
   display: block;
-  max-width: 100%;
+  background: silver;
+  list-style-type: square;
+  color: navy;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
-#main-about,
-#main-const,
-#main-pubs,
-#main-events,
-#main-cong18 {
+#e-list li {
+  width: 95%;
+  background: gainsboro;
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  font-style: oblique;
+}
+#main-pubs{
   font-size: 1em;
   /* 16px, (16px/16px=1em) */
   line-height: 1.2em;
   /* 120% at 19.2px, (19.2/16px=1.2) */
   margin: 10px;
-
 }
-
-h1 {
-  font-size: 1.5em;
-  /* 24px, (24px/16px=1.5em) */
-  line-height: 1.81em;
-  /* 120% at ~29px, (29px/16px=1.81em) */
-  font-weight: 700;
-  /* for bold effect*/
-}
-
-h2 {
-  font-size: 1.25em;
-  /* 20px, (20px/16px=1.25em) */
-  line-height: 1.5em;
-  /* 120% at 24px, (24px/16px=1.15em) */
-  font-weight: 700;
-  /* for bold */
-  margin: 0.5em 0 0.5em 0;
-  /* 8px, (8px/16px=0.5em) */
-}
-
-h3 {
-  font-size: 1em;
-  /* 16px, (16px/16px=1em) */
-  line-height: 1.25em;
-  /* 20px, (20px/16px=1.25em) */
-  font-weight: 700;
-  /* for bold */
-  margin: 0.5em 0 0.5em 0;
-  /* 8px, (8px/16px=0.5em) */
-}
-
-p {
-  font-family: "Times New Roman", Georgia, Serif;
-  font-size: 1em;
-  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;
-  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0;
-  /* ~4px, (4px/16px=0.25em) */
-}
-
-/**registration form**/
-
-.reg-header {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: .95em;
-  padding-bottom: 15px;
-
-}
-
-.info-header {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: .90em;
-}
-
-.info {
-  text-align: left;
-  border: 1px solid cornsilk;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  padding: 0px 10px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.days {
-  text-align: center;
-  border: 1px solid cornsilk;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  padding: 0px 10px;
-  font-size: .95em;
-  font-family: 'Raleway', sans-serif;
-}
-
-.days-inner {
-  width: 95%;
-  margin: 0px auto 10px auto;
-  border-bottom: 1px solid cornsilk;
-  font-size: 1.25em;
-}
-
-.cards {
-  width: 50%;
-  margin: auto;
-  padding: 10px;
-}
-
-.light {
-  font-weight: bolder;
-  color: black;
-  font-family: 'Libre Baskerville', serif
-}
-
-.logo {
-  width: 45%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 50px;
-}
-.logo_small{
-  width:200px;
-  height:200px;
-}
-
-input:focus {
-  background-color: lemonchiffon;
-
-}
-
-sup {
-  color: #ff4c4c;
-}
-
-table {
-  width: 75%;
-  margin: auto;
-  text-align: left;
-}
-
-td {
-  padding: 10px;
-}
-
-select {
-  width: 100%;
-  padding: 1px 4px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=text] {
-  width: 100%;
-  padding: 4px 4px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=email] {
-  width: 100%;
-  padding: 4px 4px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=tel] {
-  width: 100%;
-  padding: 4px 4px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  width: 100%;
-  padding: 8px 8px;
-  font-size: .80em;
-  border-radius: 4px;
-  background-color: darkslateblue;
-  color: cornsilk;
-  border: none;
-  margin-bottom: 10px;
-}
-
-input[type="reset"] {
-  width: 40%;
-  padding: 8px 8px;
-  margin: 0 30% 40px 30%;
-  font-size: .80em;
-  border-radius: 4px;
-  background-color: darkslateblue;
-  color: cornsilk;
-  border: none;
-}
-
-input[type="submit"]:hover {
-  background-color: darkorange;
-  transition-duration: 1.0s;
-  cursor: pointer;
-  width:98%;
-  margin-left:1%;
-  margin-right:1%;
-}
-
-input[type="reset"]:hover {
-  background-color: darkorange;
-  transition-duration: 1.0s;
-  cursor: pointer;
-  width:38%;
-  margin-left:31%;
-  margin-right:31%;
-}
-
-/** end of reg form**/
-
-img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-iframe {
-  position: relative;
-  border: 1px solid black;
-  width: 95%;
-  /* for better user experience */
-}
-
-#footer {
-  width: 100%;
-  background-color: gray;
-  font-size: 0.75em;
-  /* 12px */
-  text-align: center;
-  margin: 1em 0;
-  padding: 0.25em 0;
-  /* 4px */
-}
-
-iframe {
-  font-size: 1em;
-  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;
-  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0;
-  /* ~4px, (4px/16px=0.25em) */
-}
-
-img,
-iframe {
-  position: relative;
-  display: block;
-  border: none;
-  width: 95%;
-  /* for better user experience */
-}
-
-/* about page ====== */
-
-#umind {
-  width: 40%;
-
-  /* for mobile friendly */
-  display: block;
-  width: 35%;
-  float: right;
-  margin-left: 5px;
-}
-
-#qlist p {
-  font-size: 0.8em;
-  font-weight: 700;
-  font-style: oblique;
-  color: mediumblue;
-  margin: 5px;
-}
-
-#tman {
-  width: 50%;
-  /* for mobile friendly */
-  float: left;
-  color: darkred;
-}
-
-#tman {
-  width: 35%;
-  /* for mobile friendly */
-  float: left;
-  margin-right: 5px;
-}
-
-#athens {
-  width: 35%;
-  /* for mobile friendly */
-  float: right;
-  margin-left: 5px;
-}
-
-/* constitution page ====== */
 
 #constitution p {
   color: royalblue;
-  font-style: oblique;
+  font-style:arial;
 
 }
 
@@ -670,9 +175,44 @@ font-style: oblique;
   font-weight: bold;
   transition: 0.4s;
 }
-
-transition: 0.3s;
+#umind {
+display:block;
+  width: 36%;
+  margin:0 auto 15px auto;
+  
 }
+
+#qlist p {
+  font-size: 0.8em;
+  font-weight: 700;
+  font-style: oblique;
+  color: mediumblue;
+  margin:5px;
+}
+
+#tman {
+  width: 50%;
+  /* for mobile friendly */
+  float: left;
+  color: darkred;
+}
+
+#tman {
+  width: 35%;
+  /* for mobile friendly */
+  float: left;
+  margin: 0 10px;
+}
+
+#athens {
+  width: 35%;
+  /* for mobile friendly */
+  float: right;
+  margin: 0 10px;
+ 
+}
+
+
 
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -768,331 +308,930 @@ transition: 0.3s;
   font-style: oblique;
 }
 
+#peru{
+  display:block;
+  width:50%;
+  margin-left:25%;
+  margin-right: 25%;
+  padding-bottom:5px;
+}
+#cong2018{
+  width:70%;
+  margin:auto;
+}
 
-html {
+#main-events{
+  width:70%;
+  margin:auto;
+  
+}
+#cong2018{
+ 
+  border-top: 1px solid brown;
+  
+}
+#cong2018 p{
+  font-size:1.10em;
+  line-height:1.25em;
+  font-family: 'Didact Gothic', sans-serif;
+  color:black;
+}
+#sthemes{
+  border-top: 1px solid brown;
+ 
+}
+#sthemes p{
+ font-family: 'Didact Gothic', sans-serif;
+  
+  line-height:1.2em;
+}
+
+
+
+/***********END FIXES**********/
+
+
+
+/*--------------------------------------------footer/flexbox----------*/
+
+footer {
+  background-color: #8d8741;
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.icon-bar {
+  font-size: 20px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.fa {
+  padding: 10px;
+
+}
+
+.fa:hover {
+  color: firebrick;
+  transition-duration: 0.5s;
+}
+
+
+.content {
+  margin-left: 75px;
+  font-size: 28px;
+}
+
+.container-1 div {
+  padding: 2px;
+
+}
+
+.box-1 {
+  flex-basis: 25%;
+  font-size: .95em;
+}
+
+
+.copywrite {
+  text-align: center;
+  font-size: .75em;
+  line-height: .75em;
+  padding-bottom: 5px;
+}
+
+.email {
+  font-size: 1.0em;
+  line-height: 1.0em;
+
+}
+.buttons{
+  font-family: "arial", sans-serif;
+}
+
+/*-----------------------------------------headings/text----------*/
+
+h1 {
+  font-size: 1.5em;
+  /* 24px, (24px/16px=1.5em) */
+  line-height: 1.81em;
+  /* 120% at ~29px, (29px/16px=1.81em) */
+  font-weight:lighter;
+  font-family: "Libre+Baskerville";
+  text-align:center;
+  color:#262626;
+  
+}
+
+h2 {
+  font-size: 1.25zem;
+  /* 20px, (20px/16px=1.25em) */
+  line-height: 1.5em;
+  /* 120% at 24px, (24px/16px=1.15em) */
+  font-weight:lighter;
+  font-family: "Libre+Baskerville";
+  text-align:center;
+  color:#262626;
+}
+
+h3 {
+  font-size: 1em;
+  /* 16px, (16px/16px=1em) */
+  line-height: 1.25em;
+  /* 20px, (20px/16px=1.25em) */
+  font-weight:lighter;
+  font-family: "Libre+Baskerville";
+  text-align:center;
+  color:#262626;
+}
+
+p {
+  font-family:"arial"
   font-size: 1em;
   /* 16px, (16px/16px=1em) */
   line-height: 1.2em;
-  /* 120% at 19.2px, (19.2/16px=1.2) */
-  padding: 0.5em 0.5em;
-  /* 8px, (8px/16px=0.5em) */
+  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
+  padding:10px;
+  /* ~4px, (4px/16px=0.25em) */
+  text-align: center;
 }
 
-/* setup "font-family" of Sans-Serif */
-
-body {
-  font-family: "Times New Roman", Georgia, Serif;
-  background-color: whitesmoke;
+.banner,
+.tab-banner {
+  padding-top: 60px;
 }
 
-/* for Responsive Media */
 
-img,
-audio,
-video {
+a {
+  color: #262626;
+}
+
+
+
+/*----------------------------------------nav----------*/
+
+.toggle,
+[id^=drop] {
+  display: none;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  font-size: 1.04em;
+  line-height: 2.0em;
+  font-family: sans-serif;
+  font-weight: 500;
+
+
+}
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #bc986a;
+}
+
+/* Styling the links */
+
+nav a {
   display: block;
-  max-width: 100%;
+  padding: 14px 20px;
+  background-color: #bc986a;
+  color: #FBEEC1;
+  font-size: .95em;
+  text-decoration: none;
+
+
 }
 
 
-/* cong2018 page ====== */
+nav ul li ul li:hover {
+  background-color:#262626;
 
-#main-cong18 p {
-  font-size: 1em;
-  line-height: 1.2em;
-  font-style: normal;
-  color: navy;
+}
+
+/* Background color change on Hover */
+
+nav a:hover {
+  background-color: #262626;
+  color:#FBeec1;
+  transition-duration: 1.0s;
 }
 
 
-#cpic2,
-#cpic3,
-#cpic4,
-#cpic5 {
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover > ul {
+  display: inherit;
+
+}
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+  width: 100%;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+
+
+li > a:after {
+  content: ' +';
+}
+
+li > a:only-child:after {
+  content: '';
+}
+
+/**end of nav**/
+
+/*-------------------------------------------------resistration form-----------*/
+
+.reg-header {
+  background-color: darkcyan;
+  text-align: left;
+  border-radius: 4px;
+  padding: 5px 10px 15px 10px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: .95em;
+}
+
+.info-header {
+
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: .90em;
+}
+
+.info {
+  background-color: darkcyan;
+  text-align: left;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 5px 10px 5px 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.days {
+  background-color: darkcyan;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 1px 10px 0 10px;
+  font-size: .95em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.days-inner {
+  width: 95%;
+  margin: 0px auto 10px auto;
+  border-bottom: 1px solid #fbeec1;
+  font-size: 1.25em;
+}
+
+.cards {
   width: 50%;
+  margin: auto;
+  padding: 10px;
 }
 
-/* ===== MODULAR STYLES ================= */
+.light {
+  font-weight: bolder;
+  color: #262626;
+ font-family:'Libre+Baskerville';
 
-/* Our MEDIA queries are listed below */
+}
 
-/* the below query has to be min-width!!! */
+label {
+  color: #262626;
+  padding-left: 10px;
 
-@media screen and (max-width: 760px) {
-  /*Make dropdown links appear inline*/
-  ul {
-    position: static;
-    display: none;
+}
+
+
+
+input:focus {
+  background-color: lemonchiffon;
+
+}
+
+
+
+table {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  color: #262626;
+}
+
+td {
+  padding: 10px;
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input [type="radio"] {}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 8px 8px;
+  font-size: .80em;
+  border-radius: 4px;
+  background-color: darkcyan;
+  color: #fbeec1;
+  border: none;
+  margin-bottom: 10px;
+}
+
+input[type="reset"] {
+  width: 40%;
+  padding: 8px 8px;
+  margin: 0 30% 40px 30%;
+  font-size: .80em;
+  border-radius: 4px;
+  background-color: darkcyan;
+  color: #fbeec1;
+  border: none;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #262626;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+input[type="reset"]:hover {
+  background-color: #262626;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  width: 38%;
+  margin-left: 31%;
+  margin-right: 31%;
+}
+
+
+/*--------------------------------------------------------media queires----------*/
+
+/*--------------------------------------------------------small phone---------*/
+
+@media(max-width :375px) {
+
+  nav ul li {
+    display: block;
+    width: 94%;
+
   }
-  /*Create vertical spacing*/
-  li {
-    margin-bottom: 1px;
-  }
-  /*Make all menu links full width*/
-  ul li,
-  li a {
+}
+
+/*---------------------------------------------------------big phones----------*/
+
+@media (max-width: 768px) {
+  .header {
     width: 100%;
   }
-  /*Display 'show menu' link*/
-  .show-menu {
+  .banner {
+    display: none;
+  }
+
+  .cell-banner {
+    display: block;
+    padding-top: 110px;
+    width: 100%;
+    margin: 0;
+  }
+  .reg-btn {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+  .globe {
+    width: 30%;
+    margin: 5px 35% 0 35%;
+  }
+  .col-outer {
+    background-color:#daad86;
+    width: 100%;
+  }
+
+  .col-inner {
+    width: 95%;
+    margin: auto;
+  }
+  .hands-index {
+    width: 60%;
+    margin: 10px 20% 5px 20%;
+    opacity: .8;
+  }
+  .logo {
+    display: block;
+    width: 85%;
+    margin: auto;
+    padding-top:5px;
+  }
+.icons {
+  width: 70%;
+  margin: 10px 15% 20px 15%;
+}
+  .wrapper{
+    padding-top:70px;
+  }
+  footer{
+    text-align: center;
+  }
+  #peru{
+  display:block;
+  width:100%;
+  margin:0;
+}
+#cong2018{
+  width:90%;
+  margin:auto;
+}
+  
+  
+  
+  /*-----------------------------------------------registration form mobile-----------------*/
+  .reg-outer {
+    width: 100%;
+    background-color: brown;
+    padding:5px;
+
+
+  }
+
+  .reg-inner {
+    width: 90%;
+    margin: auto;
+}
+
+  .reg-header {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: .95em;
+    padding-bottom: 15px;
+    margin-top: 100px;
+  }
+  .hands {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10px;
+    opacity: .7;
+  }
+  /*---------------------------------------------nav for mobile-------------------------*/
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    background-color:#bc986a;
+    padding: 14px 20px;
+    color: #fbeec1;
+    font-size: .95em;
+    text-decoration: none;
+  }
+
+  .toggle:hover {
+    background-color:#262626;
+    color: #fbeec1;
+    transition-duration: 1.5s;
+    cursor: pointer;
+  }
+
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^=drop]:checked + ul {
     display: block;
   }
+
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px;
+
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    transition-duration: 1.5s;
+    cursor: pointer;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #fbeec1;
+    font-size: .95em;
+
+  }
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-color:#daad86;
+  }
+
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color:#262626;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+
+  /* Hide menus on hover */
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+    transition-duration: 1.5s;
+
+  }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
 }
 
-/* for tablets ====== */
+/*----------------------------------------------tablets----------*/
 
-@media screen and (min-width: 768px) {
-  /* add styles here */
-  /**Styles for registration form**/
-  form {
+@media(min-width:769px) {
+  header {
+    width: 100%;
+    margin: 0;
+    background-color: #8d8741;
+  }
+  nav {
+    width: 95%;
+    margin: auto;
+   
+  }
+  .banner {
+    display: none;
+  }
+  .logo {
+    width:60%;
+    margin-left:20%;
+    padding-top:10px;
+  }
+
+  .cell-banner {
+    display: block;
     width: 70%;
     margin: auto;
-  }
-  input[type="submit"] {
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
-  }
-  input[type="reset"] {
-    width: 30%;
-    margin-right: 35%;
-    margin-left: 35%;
-  }
-  input[type="submit"]:hover {
-  background-color: darkorange;
-  transition-duration: 1.5s;
-  cursor: pointer;
-  width:68%;
-  margin-left:16%;
-  margin-right:16%;
+   display: block;
+   }
+  .icons {
+  width: 60%;
+  margin: 10px 20% 20px 20%;
 }
-  input[type="reset"]:hover {
-  background-color: darkorange;
-  transition-duration: 1.5s;
-  cursor: pointer;
-  width:28%;
-  margin-left:36%;
-  margin-right:36%;
-}
-
-}
-
-
-
-/**end of registration form**/
-
-/* for desktops and wide screens ====== */
-
-@media screen and (min-width: 992px) {
-  /* add styles here */
-  /**Styles for registration form**/
-  form {
-    width: 40%;
+  footer{
+    text-align: center;
+  }
+  .col-outer {
+    background-color: darkcyan;
+    width: 100%;
+  
+  }
+  .col-inner {
+    background-color:#daad86;
+    width: 100%;
     margin: auto;
-    padding: 20px;
+  }
+  .reg-outer {
+    width: 100%;
+    margin: auto;
+    background-color: brown;
+  }
+  .reg-inner {
+    width: 90%;
+    margin: auto;
+    background-color: #aa1923;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   input[type="submit"] {
     width: 60%;
-    margin-right: 20%;
     margin-left: 20%;
+    margin-right: 20%;
+  }
+  input[type="submit"]:hover {
+    width: 58%;
+    margin-left: 21%;
+    margin-right: 21%;
   }
   input[type="reset"] {
     width: 20%;
-    margin-right: 40%;
     margin-left: 40%;
+    margin-right: 40%;
   }
-  input[type="submit"]:hover {
-  background-color: darkorange;
-  transition-duration: 1.5s;
-  cursor: pointer;
-  width:58%;
-  margin-left:21%;
-  margin-right:21%;
-}
   input[type="reset"]:hover {
-  background-color: darkorange;
-  transition-duration: 1.5s;
-  cursor: pointer;
-  width:18%;
-  margin-left:41%;
-  margin-right:41%;
-}
-  .info {
-    padding: 20px;
+    width: 18%;
+    margin-left: 41%;
+    margin-right: 41%;
   }
-  .days {
-    padding: 20px;
+   .reg-outer {
+    width: 100%;
+    margin: auto;
+    background-color: #bc986a;
+    padding-top: 20px;
+  }
+  .reg-inner {
+    width: 45%;
+    margin: auto;
+    background-color: brown;
+    padding: 5px 10px 0px 10px;
+  }
+  .hands {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    opacity: .7;
+  }
+  .hands-index {
+    width: 30%;
+    margin: 10px 35% 5px 35%;
+    opacity: .8;
+  }
+}
+
+/*----------------------------------------------laptops---------*/
+
+@media (min-width: 990px) {
+  header {
+    width: 100%;
+    margin: 0;
+    background-color: #8d8741;
+  }
+  nav {
+    width: 95%;
+    margin: auto;
+
+  }
+  .banner {
+    display: block;
+    width: 100%;
+    margin: 0;
   }
   .logo {
+    width:50%;
+    margin: auto;
+    padding-top: 8px;
+  }
+  .cell-banner {
+    display: none;
+  }
+ 
+  .col-inner {
+    background-color: #daad86;
+    width: 100%;
+    margin: auto;
+  }
+  .reg-outer {
+    width: 100%;
+    margin: auto;
+    background-color: #daad86;
+  
+  }
+  .reg-inner {
+    width: 45%;
+    margin: auto;
+    background-color: brown;
+    padding: 5px 10px 0px 10px;
+  }
+
+  input[type="submit"] {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  input[type="submit"]:hover {
+    width: 58%;
+    margin-left: 21%;
+    margin-right: 21%;
+  }
+  input[type="reset"] {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  input[type="reset"]:hover {
+    width: 18%;
+    margin-left: 41%;
+    margin-right: 41%;
+  }
+  .reg-btn {
+    width: 16%;
+    margin: 5px 42% 10px 42%;
+    line-height: 2.0em
+  }
+  .hands-index {
     width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    margin: 10px 35% 5px 35%;
+    opacity: .8;
   }
-  /**end of registration form**/
-  #sthemes p {
-    font-size: 0.9em;
-    font-weight: 700;
-    font-style: oblique;
-    color: navy;
-    margin-left: 5px;
+  .hands {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10px;
+    opacity: .7;
   }
-
-  #peru {
-    width: 95%;
-    /* mobile friendly */
-    height: 150px;
-    position: relative;
-    float: left;
-    margin-right: 7px;
-    margin-bottom: 5px;
+  .container-1 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
-
-  #cpic2 {
-    width: 30%;
-    border: solid gray;
-    /* transform: translate(20px, 40px) rotate(10deg); NOT working without full normalize */
+  .container-1 div {
+    border: none;
+    padding: 0 5px;
   }
-
-  #cpic3 {
-    width: 30%;
-    border: solid blue;
-    /* transform: translate(220px, -45px) rotate(-10deg); NOT working without full normalize */
+  #main-about{
+    width:90%;
+    margin:auto;
+    font-family:"Didact+Gothic", sans-serif;
+    text-align:left;
   }
+  
 
-  #cpic4 {
-    width: 35%;
-    border: solid green;
-    /* transform: translate(20px, 35px) rotate(10deg); NOT working without full normalize */
-    */ margin-bottom: 10px;
+/*-------------------------------------------widescreens---------*/
+
+@media screen and (min-width: 1200px) {
+  nav {
+    width: 75%;
+    margin: auto;
   }
-
-
-  @media screen and (max-width: 760px) {
-    /*Make dropdown links appear inline*/
-    ul {
-      position: static;
-      display: none;
-    }
-    /*Create vertical spacing*/
-    li {
-      margin-bottom: 1px;
-    }
-    /*Make all menu links full width*/
-    ul li,
-    li a {
-      width: 100%;
-    }
-    /*Display 'show menu' link*/
-    .show-menu {
-      display: block;
-    }
-
-    #cpic5 {
-      width: 35%;
-      border: solid brown;
-      /* transform: translate(220px, -55px) rotate(-10deg); NOT working without full normalize */
-      margin-bottom: 10px;
-
-    }
-
-    /* end of Nilufer Anlar section ====== */
-    /* ===== MODULAR STYLES ================= */
-    /* for tablets ====== */
-    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-    @media screen and (min-width: 600px) {
-      .topnav a:not(:first-child),
-      .dropdown .dropbtn {
-        display: none;
-      }
-      .topnav a.icon {
-        float: right;
-        display: block;
-      }
-
-    }
-
-    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
-This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    @media screen and (min-width: 600px) {
-      .topnav.responsive {
-        position: relative;
-      }
-      .topnav.responsive {
-        position: relative;
-      }
-      .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-
-        /* for ipod and wide screens ====== */
-        @media screen and (min-width: 760px) {
-          .topnav.responsive .dropdown {
-            float: none;
-          }
-          .topnav.responsive .dropdown-content {
-            position: relative;
-          }
-          .topnav.responsive .dropdown .dropbtn {
-            display: block;
-            width: 100%;
-            text-align: left;
-          }
-        }
-
-        @media screen and (min-width: 760px) {
-          /* Nilufer Anlar */
-          #umind,
-          #tman,
-          #athens {
-            width: 25%;
-          }
-
-          #peru {
-            width: 425px;
-            height: 293px;
-            margin: 10px 10px;
-          }
-
-          #sthemes {
-            float: left;
-          }
-
-          #cpic2,
-          #cpic3,
-          #cpic4,
-          #cpic5 {
-            width: 20%;
-            transform: none;
-            float: right;
-          }
-          .accordion {
-            /* Nilufer Anlar */
-            text-align: center;
-            /* center it at bigger screens */
-            transition: 0.4s;
-          }
-
-
-        }
-
-        /* for desktops and wide screens ====== */
-        @media screen and (min-width: 992px) {
-          /* Nilufer Anlar */
-          #umind,
-          #tman,
-          #athens {
-            width: 35%;
-          }
-
-
-
-        }
-
-        /* ====== end of style.css ============== */
+  .banner {
+    width: 100%;
+    margin: 0;
+  }
+  .logo {
+    width:40%;
+    margin: auto;
+    padding-top: 8px;
+  }
+  .email {
+    padding-left: 35px;
+    font-size: 1.0em;
+  
+  }
+  .container-1 {
+    width: 75%;
+    margin: auto;
+  }
+  .col-outer {
+    width: 100%;
+    margin: 0;
+    background-color: #262626;
+  }
+  .col-inner {
+    background-color: #daad86;
+    width: 70%;
+    margin: auto;
+  }
+  .reg-outer {
+    width: 70%;
+    margin: auto;
+    background-color: #daad86;
+  
+  }
+  .reg-inner {
+    width: 40%;
+    margin: auto;
+    background-color: brown;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+  }
+  .reg-btn {
+    width: 16%;
+    margin: 5px 42% 10px 42%;
+    line-height: 2.0em
+  }
+  input[type="submit"] {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  input[type="submit"]:hover {
+    width: 58%;
+    margin-left: 21%;
+    margin-right: 21%;
+  }
+  input[type="reset"] {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  input[type="reset"]:hover {
+    width: 18%;
+    margin-left: 41%;
+    margin-right: 41%;
+  }
+  .hands-index {
+    width: 38%;
+    margin: 10px 31% 5px 31%;
+    opacity: .8;
+  }
+  .hands {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+    opacity: .7;
+  }
+}

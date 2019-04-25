@@ -1,66 +1,101 @@
 <!DOCTYPE html>
-<html lang="en" class="nojs">
+
+<html lang="en">
 
 <head>
-  <title>Team Champions-League Project 2 for ITMD-362</title>
+  <title>Team Champions-League Project 2 for ITMD-362/Index</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" media="screen" href="css/resets.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Libre+Baskerville|Didact+Gothic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/isud.js" async></script>
+  <script src="js/myScript.js" async></script>
+
 </head>
 
 <body>
-  <div class="header">
-    <p><img src="media/worldialogue.jpg">International Society For Universal Dialogue</p>
-  </div>
-  <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">About
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="about.html">About ISUD</a>
-        <a href="constitution.html">Constitution</a>
-        <a href="publications.html">Publications</a>
+
+  <header>
+    <nav>
+      <img src="images/isud_header.png" class="logo">
+      <label for="drop" class="toggle">MENU</label>
+      <input type="checkbox" id="drop" />
+      <ul class="menu">
+        <li><a href="#">HOME</a></li>
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-1" class="toggle">ABOUT +</label>
+          <a href="#">ABOUT</a>
+          <input type="checkbox" id="drop-1" />
+          <ul>
+            <li><a href="about.html">ABOUT ISUD</a></li>
+            <li><a href="constitution.html">CONSTITUTION</a></li>
+            <li><a href="publications.html">PUBLICATIONS</a></li>
+          </ul>
+        </li>
+        <li>
+          <!-- First Tier Drop Down -->
+          <label for="drop-2" class="toggle">EVENTS +</label>
+          <a href="#">EVENTS</a>
+          <input type="checkbox" id="drop-2" />
+          <ul>
+            <li><a href="registration.html">UPCOMING CONGRESS</a></li>
+            <li><a href="2018.html">2018 CONGRESS</a></li>
+            <li><a href="past.html">PAST EVENTS</a> </li>
+          </ul>
+          <li><a href="https://www.youtube.com/user/hermesnow/playlists">VIDEO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="col-outer">
+      <div class="col-inner">
+        <div class="banners">
+          <img src="images/isud_banner.jpg" alt="banner" class="banner">
+          <img src="images/banner_cell.jpg" alt="banner" class="cell-banner">
+        </div>
+        <div class="intro">
+          <h1>Who Are We and What Do We Do?</h1>
+          <h3>ISUD is a society of scholars, mostly philosophers, from many parts of the world devoted to promoting international dialogue and the discussion of fundamental questions of universal concern, which affect all humanity, such as world peace, human rights, dialogical interrelations of diverse cultures, and preservation of the world ecology.</h3>
+          <img src="images/icons.png" alt="icons" class="icons">
+        </div>
+        <div class="about">
+          <h2>Reserving seats for the 2020 World Congress now..</h2>
+          <a href="registration.html"><button class="reg-btn">Register Here</button></a>
+          <img src="images/globe_hands.png" alt="hands" class="hands-index">
+        </div>
+        <img src="images/graz.jpg" alt="graz" class="graz">
       </div>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Events
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="register.html">Upcoming Congress</a>
-        <a href="cong2018.html">2018 Congress</a>
-        <a href="events.html">Past Events</a>
-        <a href="https://www.youtube.com/user/hermesnow/playlists">Videos</a>
+    <footer>
+      <div class="container-1">
+        <div class="box-1">
+          <a href="#" class="email"><i class="fa fa-envelope"> isudcongress2020@gmail.com</i></a>
+          <a href="#" class="email"><i class="fa fa-envelope"> isud@gmail.com</i></a>
+        </div>
+        <div class="box-1">
+          <p>Designed by Team Champions-League</p>
+          <p>Made in Chicago</p>
+        </div>
+        <div class="box-1">
+          <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="copywrite">
+        <p>ISUD &copy; 2019</p>
 
-  </div>
-  <main id="content">
-    <h1>ISUD XII World Congress</h1>
-    <p>
-      Graz, Austia
-      July 10-15, 2020</p>
-      <p>
-        Dear participants of the ISUD Congress: You can now find the information regarding HOTELS and other relevant information for your plans to travel to Garz, Austria in this you will also find instructions for the payment of the registration and membership fees for you to be able to take care of that before coming to Graz. Should you have any questions at this point, please contact us at isud2018@gmail.com and we will respond to your queries immediately.
-      </p>
+      </div>
+    </footer>
 
-      <p>
-          <h2>The Organizing Committee<h2>
-
-            <h2>ISUD XII WORLD CONGRESS<h2>
-
-              <h2>GRAZ, 2020</h2>
-              
-    <div class="footer">
-      <p>Contact information: <a href="mailto:someone@example.com">isud2018@gmail.com</a></p>
-       <p>ISUD&copy;2019</p>
-    </div>
   </main>
-  </body>
-  </html>
+</body>
+
+</html>
